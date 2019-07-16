@@ -8,3 +8,8 @@ MODDIR=${0%/*}
 
 # setup selinux policy
 magiskpolicy --live "allow adbd magisk unix_stream_socket { connectto }"
+magiskpolicy --live "allow untrusted_app vendor_default_prop file { read open }"
+magiskpolicy --live "allow adbd vendor_toolbox_exec file { getattr execute execute_no_trans read open }"
+
+# fakelocation xposed
+magiskpolicy --live "allow nfc app_data_file dir { search }"
