@@ -1,6 +1,6 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=op6-selinux-helper
+name=OP6 SELINUX HELPER
+version=v1.0
+versionCode=1000
+author=brucezhang1993
+description=A helper module to add selinux policy for OnePlus 6.
